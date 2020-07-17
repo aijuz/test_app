@@ -20,7 +20,7 @@ class _SelectOptionHeadingState extends State<SelectOptionHeading> {
         ),
         Text(
           widget.heading,
-          style: TextStyle(fontWeight: FontWeight.w500),
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ],
     );

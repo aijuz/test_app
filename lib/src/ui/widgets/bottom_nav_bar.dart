@@ -31,13 +31,19 @@ class _BuildBottomNavBarState extends State<BuildBottomNavBar> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(top: screenHeight(context, dividedBy: 40)),
-            child: Icon(
-              Icons.add_circle,
-              size: 50,
-              color: Theme.of(context).primaryColor,
+          GestureDetector(
+            child: Padding(
+              padding:
+                  EdgeInsets.only(top: screenHeight(context, dividedBy: 40)),
+              child: Icon(
+                Icons.add_circle,
+                size: 50,
+                color: Theme.of(context).primaryColor,
+              ),
             ),
+            onTap: () {
+              incCounter();
+            },
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -64,7 +70,9 @@ class _BuildBottomNavBarState extends State<BuildBottomNavBar> {
                   child: Text(
                     counter.toString(),
                     style: TextStyle(
-                        color: Theme.of(context).primaryColor,
+                        color: Theme
+                            .of(context)
+                            .primaryColor,
                         fontWeight: FontWeight.bold,
                         fontSize: 30),
                   ),
@@ -72,13 +80,20 @@ class _BuildBottomNavBarState extends State<BuildBottomNavBar> {
               ),
             ],
           ),
-          Padding(
-            padding: EdgeInsets.only(top: screenHeight(context, dividedBy: 40)),
-            child: Icon(
-              Icons.remove_circle,
-              size: 50,
-              color: Theme.of(context).primaryColor,
-            ),
+          GestureDetector(
+            child: Padding(
+              padding: EdgeInsets.only(
+                  top: screenHeight(context, dividedBy: 40)),
+              child: Icon(
+                Icons.remove_circle,
+                size: 50,
+                color: Theme
+                    .of(context)
+                    .primaryColor,
+              ),
+            ), onTap: () {
+            decCounter();
+          },
           ),
         ],
       ),
