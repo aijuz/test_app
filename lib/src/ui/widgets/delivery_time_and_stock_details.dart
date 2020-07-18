@@ -26,7 +26,7 @@ class _DeliveryTimeStockDetailsState extends State<DeliveryTimeStockDetails> {
           width: screenWidth(context, dividedBy: 16),
         ),
         Text(
-          "Only" + widget.stockLeft + " left in stock",
+          "Only " + widget.stockLeft + " left in stock",
           style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
         ),
       ],
