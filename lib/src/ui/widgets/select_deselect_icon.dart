@@ -14,7 +14,7 @@ class _BuildSelectIconState extends State<BuildSelectIcon> {
         ? GestureDetector(
             child: Icon(
               Icons.radio_button_unchecked,
-              color: Colors.black,
+              color: Colors.black.withOpacity(.5),
               size: 20,
             ),
             onTap: () {

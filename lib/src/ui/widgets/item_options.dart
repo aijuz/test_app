@@ -21,7 +21,10 @@ class _BuildSelectOptionsState extends State<BuildSelectOptions> {
         ),
         Container(
             width: screenWidth(context, dividedBy: 2),
-            child: Text(widget.itemName)),
+            child: Text(
+              widget.itemName,
+              style: TextStyle(color: Colors.grey),
+            )),
         SizedBox(
           width: screenWidth(context, dividedBy: 7),
         ),

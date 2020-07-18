@@ -45,6 +45,9 @@ class _BuildBottomNavBarState extends State<BuildBottomNavBar> {
               incCounter();
             },
           ),
+          SizedBox(
+            width: screenWidth(context, dividedBy: 100),
+          ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -80,6 +83,7 @@ class _BuildBottomNavBarState extends State<BuildBottomNavBar> {
               ),
             ],
           ),
+          SizedBox(width: screenWidth(context, dividedBy: 100),),
           GestureDetector(
             child: Padding(
               padding: EdgeInsets.only(
