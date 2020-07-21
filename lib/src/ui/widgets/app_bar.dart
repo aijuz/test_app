@@ -26,7 +26,7 @@ class BuildAppBar extends StatelessWidget with PreferredSizeWidget {
               width: screenWidth(context, dividedBy: 30),
             ),
             Container(
-              width: screenWidth(context, dividedBy: 1.8),
+              width: screenWidth(context, dividedBy: 1.7),
               child: Text(titleName,
                   style: TextStyle(
                       color: Theme.of(context).primaryColor,
@@ -35,7 +35,7 @@ class BuildAppBar extends StatelessWidget with PreferredSizeWidget {
                   overflow: TextOverflow.ellipsis),
             ),
             SizedBox(
-              width: screenWidth(context, dividedBy: 14),
+              width: screenWidth(context, dividedBy: 10),
             ),
             BuildClickableIcon(
               size: 35,
