@@ -26,7 +26,7 @@ class BuildAppBar extends StatelessWidget with PreferredSizeWidget {
               width: screenWidth(context, dividedBy: 30),
             ),
             Container(
-              width: screenWidth(context, dividedBy: 1.5),
+              width: screenWidth(context, dividedBy: 1.8),
               child: Text(titleName,
                   style: TextStyle(
                       color: Theme.of(context).primaryColor,
